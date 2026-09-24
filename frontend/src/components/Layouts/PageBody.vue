@@ -10,6 +10,7 @@
 					<h1 v-if="hasName" class="text-lg-semibold min-w-0 text-ink-gray-9">
 						<slot name="name">{{ title }}</slot>
 					</h1>
+					<slot name="name-actions" />
 					<Button
 						v-if="$slots.filters && isMobile"
 						class="shrink-0"

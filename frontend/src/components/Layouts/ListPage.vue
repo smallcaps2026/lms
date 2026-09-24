@@ -9,6 +9,9 @@
 		<template v-if="$slots.name" #name>
 			<slot name="name" v-bind="{ totalCount: resolvedCount }" />
 		</template>
+		<template v-if="$slots['name-actions']" #name-actions>
+			<slot name="name-actions" />
+		</template>
 		<template v-if="$slots.filters || search !== undefined" #filters>
 			<FormControl
 				v-if="search !== undefined"
