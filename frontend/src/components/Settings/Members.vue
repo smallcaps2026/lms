@@ -9,7 +9,7 @@
 		v-model:search="search"
 		searchable
 		:search-label="__('Search members')"
-		empty-name="Users"
+		:empty-name="__('Users')"
 		empty-icon="lucide-user"
 		@new="openNewMember"
 		@load-more="fetchMembers()"

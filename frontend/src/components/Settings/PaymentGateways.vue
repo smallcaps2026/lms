@@ -10,7 +10,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search gateways')"
-		empty-name="Payment Gateways"
+		:empty-name="__('Payment Gateways')"
 		empty-icon="lucide-dollar-sign"
 		@new="openForm('new')"
 		@load-more="list.loadMore()"

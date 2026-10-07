@@ -10,7 +10,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search badges')"
-		empty-name="Badges"
+		:empty-name="__('Badge')"
 		empty-icon="lucide-award"
 		@new="openForm('new')"
 		@load-more="list.loadMore()"

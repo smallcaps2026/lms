@@ -10,7 +10,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search accounts')"
-		empty-name="Google Meet Settings"
+		:empty-name="__('Google Meet Setting')"
 		empty-icon="lucide-presentation"
 		@new="openForm('new')"
 		@load-more="list.loadMore()"

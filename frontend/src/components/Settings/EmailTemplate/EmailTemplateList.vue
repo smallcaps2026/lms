@@ -11,7 +11,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search Template')"
-		empty-name="Email Templates"
+		:empty-name="__('Email Template')"
 		empty-icon="lucide-mail-plus"
 		@new="emit('update:step', 'template-new')"
 		@load-more="list.loadMore()"

@@ -7,7 +7,7 @@
 		:total-count="courseCount"
 		:has-next-page="courses.hasNextPage"
 		v-model:page-length="pageLength"
-		empty-name="Courses"
+		:empty-name="__('Course')"
 		empty-icon="lucide-book-open"
 		@load-more="courses.next()"
 	>
@@ -35,6 +35,18 @@
 					</Button>
 				</template>
 			</Dropdown>
+		</template>
+
+		<template #name-actions>
+			<Button
+				variant="subtle"
+				@click="openDiscord"
+			>
+				<template #prefix>
+					<span class="lucide-message-circle size-4" />
+				</template>
+				{{ __('Go to Discord') }}
+			</Button>
 		</template>
 
 		<template #filters>
@@ -373,6 +385,15 @@ const courseMenu = computed(() => {
 		},
 	]
 })
+
+// Template expressions cannot see `window`, so the call has to live here.
+const openDiscord = () => {
+	window.open(
+		'https://discord.com/invite/SFVapuvGp',
+		'_blank',
+		'noopener,noreferrer'
+	)
+}
 
 const breadcrumbs = computed(() => [
 	{

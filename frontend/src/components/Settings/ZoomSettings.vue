@@ -10,7 +10,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search accounts')"
-		empty-name="Zoom Settings"
+		:empty-name="__('Zoom Settings')"
 		empty-icon="lucide-video"
 		@new="openForm('new')"
 		@load-more="list.loadMore()"

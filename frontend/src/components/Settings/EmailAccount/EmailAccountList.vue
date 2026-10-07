@@ -13,7 +13,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search accounts')"
-		empty-name="Email Accounts"
+		:empty-name="__('Email Account')"
 		empty-icon="lucide-mail"
 		@new="emit('update:step', 'email-add')"
 		@load-more="list.loadMore()"

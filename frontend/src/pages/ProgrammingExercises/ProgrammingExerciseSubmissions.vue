@@ -9,7 +9,7 @@
 		:has-next-page="submissions.hasNextPage"
 		:list-options="listOptions"
 		v-model:page-length="pageLength"
-		empty-name="Programming Exercise Submissions"
+		:empty-name="__('Programming Exercise Submission')"
 		empty-icon="lucide-file-code"
 		@load-more="submissions.next()"
 	>

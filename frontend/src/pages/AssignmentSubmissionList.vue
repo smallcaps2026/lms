@@ -17,7 +17,7 @@
 			}),
 		}"
 		v-model:page-length="pageLength"
-		empty-name="Assignment Submissions"
+		:empty-name="__('Assignment Submission')"
 		empty-icon="lucide-pencil"
 		@load-more="submissions.next()"
 	>

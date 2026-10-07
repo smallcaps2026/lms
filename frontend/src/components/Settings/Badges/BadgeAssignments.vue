@@ -9,7 +9,7 @@
 		searchable
 		:search-label="__('Search members')"
 		show-back
-		empty-name="Assignments"
+		:empty-name="__('Assignments')"
 		empty-icon="lucide-graduation-cap"
 		@back="show = false"
 		@new="openForm('new')"

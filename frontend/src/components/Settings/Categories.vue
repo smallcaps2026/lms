@@ -10,7 +10,7 @@
 		searchable
 		:search-label="__('Search categories')"
 		:new-label="showForm ? __('Close') : __('New')"
-		empty-name="Categories"
+		:empty-name="__('Category')"
 		empty-icon="lucide-network"
 		@new="showCategoryForm()"
 		@load-more="list.loadMore()"

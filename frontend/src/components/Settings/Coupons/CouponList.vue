@@ -9,7 +9,7 @@
 		v-model:search="list.search"
 		searchable
 		:search-label="__('Search coupons')"
-		empty-name="Coupons"
+		:empty-name="__('Coupon')"
 		empty-icon="lucide-ticket"
 		@new="openForm()"
 		@load-more="list.loadMore()"
